@@ -1,7 +1,7 @@
 # Scroll-Driven Hero Section Animation
 
 > **Itzfizz Digital — Web Development Internship Assignment**  
-> Developed by **Krishu Kumar** ([rajputkrishu2814@gmail.com](mailto:rajputkrishu2814@gmail.com))  
+> Developed by **Krishu Kumar**  
 > **GitHub Profile**: [github.com/krishu2814](https://github.com/krishu2814)  
 > **GitHub Repository**: [github.com/krishu2814/ITZFIZZ-assignment](https://github.com/krishu2814/ITZFIZZ-assignment)  
 > **Live Demo (GitHub Pages)**: [https://krishu2814.github.io/ITZFIZZ-assignment/](https://krishu2814.github.io/ITZFIZZ-assignment/)
@@ -64,27 +64,6 @@ itzfizz-scroll-animation/
 
 ---
 
-## 🚀 How to Run Locally
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/krishu2814/ITZFIZZ-assignment.git
-   cd ITZFIZZ-assignment
-   ```
-
-2. **Open with any static HTTP server**:
-   ```bash
-   # Using Python 3:
-   python3 -m http.server 3000
-
-   # Or using Node npx:
-   npx serve .
-   ```
-
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
 ## 🌐 Deploy to GitHub Pages (Step-by-Step)
 
 1. Use your existing GitHub repository:
@@ -104,10 +83,3 @@ itzfizz-scroll-animation/
    - Click **Save**.
    - Your live webpage will be available at:
      `https://krishu2814.github.io/ITZFIZZ-assignment/`
-
----
-
-## 📬 Contact & Submission Details
-- **Candidate Name**: Krishu Kumar
-- **Email**: rajputkrishu2814@gmail.com
-- **Role**: Web Development Intern (6 Months) — Itzfizz Digital
