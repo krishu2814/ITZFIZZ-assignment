@@ -3,7 +3,8 @@
 > **Itzfizz Digital — Web Development Internship Assignment**  
 > Developed by **Krishu Kumar**  
 > **GitHub Profile**: [github.com/krishu2814](https://github.com/krishu2814)  
-> **GitHub Repository**: [github.com/krishu2814/ITZFIZZ-assignment](https://github.com/krishu2814/ITZFIZZ-assignment)
+> **GitHub Repository**: [github.com/krishu2814/ITZFIZZ-assignment](https://github.com/krishu2814/ITZFIZZ-assignment)  
+> **Live Demo**: [https://krishu2814.github.io/ITZFIZZ-assignment/](https://krishu2814.github.io/ITZFIZZ-assignment/)
 
 ---
 
