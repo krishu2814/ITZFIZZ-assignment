@@ -90,7 +90,8 @@ body {
   background: linear-gradient(90deg, var(--accent-lime), var(--accent-orange));
   transform-origin: 0% 50%;
   transform: scaleX(0);
-  z-index: 1000;
+  z-index: 1200;
+  pointer-events: none;
   will-change: transform;
 }
 
@@ -100,7 +101,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1100;
+  pointer-events: auto;
   padding: 1.1rem 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -198,6 +200,9 @@ body {
   border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
   transition: all 0.25s var(--transition-smooth);
   border: 1px solid transparent;
 }

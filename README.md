@@ -2,8 +2,9 @@
 
 > **Itzfizz Digital — Web Development Internship Assignment**  
 > Developed by **Krishu Kumar** ([rajputkrishu2814@gmail.com](mailto:rajputkrishu2814@gmail.com))  
-> **GitHub Profile**: [github.com/rajputkrishu2814](https://github.com/rajputkrishu2814)  
-> **Live Demo**: [https://rajputkrishu2814.github.io/itzfizz-scroll-animation/](https://rajputkrishu2814.github.io/itzfizz-scroll-animation/)
+> **GitHub Profile**: [github.com/krishu2814](https://github.com/krishu2814)  
+> **GitHub Repository**: [github.com/krishu2814/ITZFIZZ-assignment](https://github.com/krishu2814/ITZFIZZ-assignment)  
+> **Live Demo (GitHub Pages)**: [https://krishu2814.github.io/ITZFIZZ-assignment/](https://krishu2814.github.io/ITZFIZZ-assignment/)
 
 ---
 
@@ -67,8 +68,8 @@ itzfizz-scroll-animation/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/rajputkrishu2814/itzfizz-scroll-animation.git
-   cd itzfizz-scroll-animation
+   git clone https://github.com/krishu2814/ITZFIZZ-assignment.git
+   cd ITZFIZZ-assignment
    ```
 
 2. **Open with any static HTTP server**:
@@ -86,12 +87,13 @@ itzfizz-scroll-animation/
 
 ## 🌐 Deploy to GitHub Pages (Step-by-Step)
 
-1. Create a new public repository on GitHub named:
-   `itzfizz-scroll-animation`
+1. Use your existing GitHub repository:
+   `https://github.com/krishu2814/ITZFIZZ-assignment`
 
 2. Push the local code to your GitHub repository:
    ```bash
-   git remote add origin https://github.com/rajputkrishu2814/itzfizz-scroll-animation.git
+   git remote add origin https://github.com/krishu2814/ITZFIZZ-assignment.git
+   git branch -M main
    git push -u origin main
    ```
 
@@ -101,7 +103,7 @@ itzfizz-scroll-animation/
    - Select branch: `main` and folder: `/ (root)`.
    - Click **Save**.
    - Your live webpage will be available at:
-     `https://rajputkrishu2814.github.io/itzfizz-scroll-animation/`
+     `https://krishu2814.github.io/ITZFIZZ-assignment/`
 
 ---
 
