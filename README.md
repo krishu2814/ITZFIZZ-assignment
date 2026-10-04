@@ -3,8 +3,7 @@
 > **Itzfizz Digital — Web Development Internship Assignment**  
 > Developed by **Krishu Kumar**  
 > **GitHub Profile**: [github.com/krishu2814](https://github.com/krishu2814)  
-> **GitHub Repository**: [github.com/krishu2814/ITZFIZZ-assignment](https://github.com/krishu2814/ITZFIZZ-assignment)  
-> **Live Demo (GitHub Pages)**: [https://krishu2814.github.io/ITZFIZZ-assignment/](https://krishu2814.github.io/ITZFIZZ-assignment/)
+> **GitHub Repository**: [github.com/krishu2814/ITZFIZZ-assignment](https://github.com/krishu2814/ITZFIZZ-assignment)
 
 ---
 
@@ -62,24 +61,3 @@ itzfizz-scroll-animation/
 2. **Spatial Coordinate Caching**: Letter and waypoint bounding coordinates are precomputed once on load and updated only during debounced window resize events. No `getBoundingClientRect()` calls are performed inside the active scroll loop.
 3. **Smooth Scrubbing**: A GSAP scrub factor of `1.2s` introduces subtle momentum and inertia, making touchpad and mouse wheel interactions feel exceptionally natural and premium.
 
----
-
-## 🌐 Deploy to GitHub Pages (Step-by-Step)
-
-1. Use your existing GitHub repository:
-   `https://github.com/krishu2814/ITZFIZZ-assignment`
-
-2. Push the local code to your GitHub repository:
-   ```bash
-   git remote add origin https://github.com/krishu2814/ITZFIZZ-assignment.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-3. Enable GitHub Pages:
-   - Go to your repository settings on GitHub (`Settings` -> `Pages`).
-   - Under **Build and deployment** -> **Source**, select **Deploy from a branch**.
-   - Select branch: `main` and folder: `/ (root)`.
-   - Click **Save**.
-   - Your live webpage will be available at:
-     `https://krishu2814.github.io/ITZFIZZ-assignment/`
