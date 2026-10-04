@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itzfizz Digital | Scroll-Driven Hero Section Animation</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="High-performance scroll-driven hero animation assignment for Itzfizz Digital. Crafted with modern HTML5, CSS3, vanilla JavaScript, and GSAP ScrollTrigger." />
+  <meta name="author" content="Krishu Kumar" />
+  <meta property="og:title" content="Itzfizz Digital - Scroll-Driven Hero Animation" />
+  <meta property="og:description" content="Recreated automotive scroll animation with GSAP ScrollTrigger, letter illumination, and metric reveals." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#heroTrack" class="skip-link">Skip to Animation</a>
+
+  <!-- Top Global Scroll Progress Bar -->
+  <div class="scroll-progress-line" id="scrollProgressLine"></div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <a href="#" class="brand-wrapper" aria-label="Itzfizz Digital Home">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13H5.5L12 6.5z"/>
+        </svg>
+      </div>
+      <span class="brand-title">ITZFIZZ<span>.</span></span>
+    </a>
+
+    <div class="nav-actions">
+      <div class="badge-tag">
+        <span class="status-dot"></span>
+        <span>Internship Assignment</span>
+      </div>
+
+      <!-- Engine SFX Audio Synthesizer Toggle -->
+      <button class="audio-toggle" id="audioToggleBtn" title="Toggle Engine Audio (Synthesized Web Audio API)" aria-label="Toggle engine sound">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+      </button>
+
+      <a href="https://github.com/rajputkrishu2814" target="_blank" rel="noopener noreferrer" class="btn-pill btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SCROLL SECTION (PRIMARY ASSIGNMENT FEATURE)
+       Occupies the first screen above the fold on initial load.
+       Pins and drives the McLaren car animation across the screen on scroll.
+       ========================================================================== -->
+  <main>
+    <section class="scroll-hero-section" id="heroSection">
+      <div class="hero-track-wrapper" id="heroTrack">
+        
+        <!-- Hero Header: Subtitle & Letter-Spaced Headline -->
+        <div class="hero-top-content">
+          <div class="hero-subtitle-tag">
+            <span>High-Velocity Digital Growth</span>
+          </div>
+
+          <h1 class="hero-headline" aria-label="WELCOME ITZFIZZ">
+            <span class="headline-char">W</span>
+            <span class="headline-char">E</span>
+            <span class="headline-char">L</span>
+            <span class="headline-char">C</span>
+            <span class="headline-char">O</span>
+            <span class="headline-char">M</span>
+            <span class="headline-char">E</span>
+            <span class="headline-char space">&nbsp;</span>
+            <span class="headline-char">I</span>
+            <span class="headline-char">T</span>
+            <span class="headline-char">Z</span>
+            <span class="headline-char">F</span>
+            <span class="headline-char">I</span>
+            <span class="headline-char">Z</span>
+            <span class="headline-char">Z</span>
+          </h1>
+        </div>
+
+        <!-- Center Stage: The Asphalt Road & Moving Car & Metric Cards -->
+        <div class="hero-stage">
+
+          <!-- Top Metric Card 1: Pickup Point / Conversion Surge -->
+          <div class="metric-box" id="box-pickup">
+            <span class="metric-pill">Conversion</span>
+            <div class="metric-val" data-target="58" data-suffix="%">58%</div>
+            <p class="metric-desc">Increase in pick up point use</p>
+          </div>
+
+          <!-- Top Metric Card 3: Repeat Customer Retention -->
+          <div class="metric-box" id="box-retention">
+            <span class="metric-pill">Retention</span>
+            <div class="metric-val" data-target="27" data-suffix="%">27%</div>
+            <p class="metric-desc">Increase in pick up point use</p>
+          </div>
+
+          <!-- The Road Track -->
+          <div class="road-track" id="roadTrack">
+            <!-- Road Curbs Detail -->
+            <div class="road-curb-top"></div>
+            <div class="road-curb-bottom"></div>
+
+            <!-- Dashed Road Markings -->
+            <div class="road-center-stripe"></div>
+
+            <!-- Distance Markers -->
+            <div class="distance-markers">
+              <span class="dist-node">00 M</span>
+              <span class="dist-node">250 M</span>
+              <span class="dist-node">500 M</span>
+              <span class="dist-node">750 M</span>
+              <span class="dist-node">1000 M</span>
+            </div>
+
+            <!-- Neon Trail expanding behind the car (scaleX) -->
+            <div class="car-trail" id="carTrail"></div>
+
+            <!-- Asphalt Grid Stencil Typography (Revealed by Green Trail) -->
+            <div class="track-headline-overlay" aria-hidden="true">
+              <span class="track-char">W</span>
+              <span class="track-char">E</span>
+              <span class="track-char">L</span>
+              <span class="track-char">C</span>
+              <span class="track-char">O</span>
+              <span class="track-char">M</span>
+              <span class="track-char">E</span>
+              <span class="track-char">&nbsp;</span>
+              <span class="track-char">I</span>
+              <span class="track-char">T</span>
+              <span class="track-char">Z</span>
+              <span class="track-char">F</span>
+              <span class="track-char">I</span>
+              <span class="track-char">Z</span>
+              <span class="track-char">Z</span>
+            </div>
+
+            <!-- The McLaren 720S Sports Car Element -->
+            <div class="car-container" id="carContainer">
+              <div class="car-underglow"></div>
+              <img src="assets/images/mclaren-car.png" alt="McLaren 720S Top View" class="car-image" id="carImage" />
+              <div class="headlight-beam"></div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Metric Card 2: Decreased Support Overhead -->
+          <div class="metric-box" id="box-support">
+            <span class="metric-pill">Efficiency</span>
+            <div class="metric-val" data-target="23" data-suffix="%">23%</div>
+            <p class="metric-desc">Decreased in customer phone calls</p>
+          </div>
+
+          <!-- Bottom Metric Card 4: Customer Checkout Velocity -->
+          <div class="metric-box" id="box-velocity">
+            <span class="metric-pill">Velocity</span>
+            <div class="metric-val" data-target="40" data-suffix="%">40%</div>
+            <p class="metric-desc">Decreased in customer phone calls</p>
+          </div>
+
+        </div>
+
+        <!-- Hero Bottom Bar: Scroll Navigation & Live Telemetry -->
+        <div class="hero-bottom-bar">
+          <div class="scroll-indicator-wrap">
+            <div class="mouse-icon">
+              <div class="mouse-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to Accelerate</span>
+          </div>
+
+          <div class="speedometer-display">
+            <span class="speed-val" id="speedVal">0</span>
+            <span class="speed-unit">KM/H</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SHOWCASE & ARCHITECTURE HIGHLIGHTS
+         Follows naturally when the user finishes scrolling the hero track.
+         ========================================================================== -->
+    <section class="showcase-section" id="showcaseSection">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <div class="section-subtitle">Engineering Excellence</div>
+          <h2 class="section-title">Built for Performance & Motion Quality</h2>
+          <p class="section-desc">
+            Recreated inspired by the reference with modern performance optimizations: zero layout reflows, hardware-accelerated transforms, and pure vanilla web standards.
+          </p>
+        </div>
+
+        <!-- Technical Features Grid -->
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Scrubbed ScrollTrigger</h3>
+            <p class="feature-body">
+              Pinned 100vh viewport synchronized to page scroll using a scrub factor of 1.2s. Delivers natural inertia and eliminates choppy playback.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">Zero Layout Thrashing</h3>
+            <p class="feature-body">
+              Replaced width manipulation with GPU-accelerated <code>transform: scaleX()</code> and precomputed spatial coordinates on resize, preventing render reflows.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Staggered Intro Reveal</h3>
+            <p class="feature-body">
+              Initial load timeline smoothly orchestrates letter-by-letter glyph entrance, vehicle positioning, and dynamic statistical number counter tweens.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Responsive & Mobile Ready</h3>
+            <p class="feature-body">
+              Engineered with fluid clamp typography, debounced layout recalculations, and touch-tested scrolling for seamless presentation across all devices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Evaluator Interactive Controls Panel -->
+        <div class="controls-panel">
+          <div class="controls-heading">
+            <h3 class="controls-title">Interactive Evaluator Controls</h3>
+            <span class="badge-tag">Test Bench</span>
+          </div>
+          <p class="feature-body">
+            Use these shortcuts to inspect different animation states and test edge conditions without manual scrubbing:
+          </p>
+          <div class="controls-buttons">
+            <button class="interactive-btn" id="replayBtn">Replay Initial Load Animation</button>
+            <button class="interactive-btn" data-milestone="0.20">Jump to Waypoint 1 (20%)</button>
+            <button class="interactive-btn" data-milestone="0.45">Jump to Waypoint 2 (45%)</button>
+            <button class="interactive-btn" data-milestone="0.70">Jump to Waypoint 3 (70%)</button>
+            <button class="interactive-btn" data-milestone="0.95">Jump to Waypoint 4 (95%)</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-credits">
+      <p>Submitted for <strong>Itzfizz Digital</strong> Web Development Internship</p>
+      <p>Designed & Developed by <strong>Krishu Kumar</strong></p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:rajputkrishu2814@gmail.com">rajputkrishu2814@gmail.com</a>
+      <a href="https://github.com/rajputkrishu2814" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+    </div>
+  </footer>
+
+  <!-- GSAP Core & ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main Interaction Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
